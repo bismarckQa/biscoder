@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Condensed:wght@700&display=swap');
+/*==============
+ICONOS  STYLES
+================*/
+.skill-container{
+    width: 100%;
+ 
+   max-height: 330px !important;
+   height: 330px !important;
+   
+   padding: 10px 0px;
+    
+}
+   .conte{
+       width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+@media (min-width: 1200px) {
+
+    .images-skills{
+        width: 300px !important;
+        height: 300px !important;
+        border-radius: 20px !important;
+       * object-fit: contain;
+    }
+}
+@media(min-width: 768px) and (max-width: 1199px){
+    .images-skills{
+    width: 250px;
+    height: 250px;
+     border-radius: 20px !important;
+}
+} 
+@media(max-width: 767px){
+    .images-skills{
+    width: 200px;
+    height: 200px;
+     border-radius: 20px !important;
+}
+.skill-container{
+    padding: 2px 0px;
+}
+}
+/*===============
+Estilos articulos
+===================*/
+.container-articles{
+    width: 100%;
+    padding: 20px 15px;
+   
+}
+.container-articles ul{
+    list-style: circle;
+}
+.container-articles p, ul, ol, h4{
+    color: white;
+}
+.container-articles p{
+    padding: 5px 20px;
+    text-align: justify;
+}
+.container-articles h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: gold;
+    padding: 10px 0px;
+}
+.container-articles h3, h4{
+    color: silver;
+}
+.container-articles p{
+    text-align: justify;
+}
+div.content-imag {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    padding: 15px 0px;
+    width: 100%;
+    display: flex;
+}
+.content-imag img{
+    width: 60%;
+    margin: auto;
+    height: 500px;
+    object-fit: contain;
+   
+     box-shadow: 0px 3px 4px 6px silver;
+}
+@media(min-width:768px) and (max-width:992px){
+   .content-imag img{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    object-fit: contain;
+   
+     box-shadow: 0px 3px 4px 6px silver;
+} 
+}
+@media(max-width:767px){
+ .content-imag img{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    object-fit: contain;
+     box-shadow: 0px 3px 4px 6px silver;
+}   
+}
+
+/*============
+estilos services
+========*/
+.serv-box p.text-center{
+    text-align: justify !important;
+}
+
+/*=================
+Copy paste estilos
+==================*/
+.code-container { 
+    width: 90%; 
+    margin: auto; 
+    height: auto; 
+    position: relative; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 0px 5px; 
+    margin-bottom: 10px; 
+    background-color: black; 
+    color: #fff; 
+    font-size: 18pt;
+    overflow-x: auto; 
+    white-space: nowrap; 
+} 
+.copy-button { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    padding: 5px 10px; 
+    border: none; 
+    background-color: #007bff; 
+    color: #fff; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: 0.5s all; 
+} 
+.copy-button:hover{  
+    transform: scale(1.1); 
+    background-color: green; 
+} 
+.gold{ 
+    color: gold; 
+} 
+.green{ 
+    color: green; 
+} 
+.blue{ 
+    color: #007bff; 
+}
+.red{ color: red;}
+.gris {color: darkcyan;}
+.copy-button:disabled { 
+    transition: none; }
+.language-html{ 
+    float: left;
+}
+
+
+@media(max-width:768px){
+.code-container {
+     font-size: 15pt;
+    width: 100%;
+    padding: 35px 0px 5px 0px;
+  text-align: left;
+}
+
+.code-container code {
+   
+    left: 0;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+}

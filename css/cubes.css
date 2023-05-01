@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+.cubes-containers{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	*align-items: center;
+	padding-top: 150px;
+	height: 700px;
+	background: #050505;
+
+}
+/*=====================
+	Cubo verde
+============*/
+.cube{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	transform: rotateX(-30deg);
+	animation: animate 6s linear infinite;
+}
+@keyframes animate {
+	0%
+	{
+		transform: rotateX(-30deg) rotateY(0deg);
+	}
+	100%
+	{
+		transform: rotateX(-30deg) rotateY(360deg);
+	}
+
+}
+.cube div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.cube div span img{
+	width: 100%;
+	height: 100%;
+}
+.cube div span{
+	padding: 5%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#151515,#00ec00);
+	transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+}
+.cube .top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: #222;
+	transform: rotateX(90deg) translateZ(100px);
+}
+.cube .top::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: #0f0;
+	transform:  translateZ(-380px);
+	filter: blur(20px);
+	box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+	0 0 200px rgba(0, 255, 0, 0.4),
+	0 0 300px rgba(0, 255, 0, 0.6),
+	0 0 400px rgba(0, 255, 0, 0.8),
+	0 0 500px rgba(0, 255, 0, 1);
+
+}
+/*================
+	Cubo rojo
+===============*/
+.cube2{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	transform-style: preserve-3d;
+	transform: rotateX(-30deg);
+	animation: animate 5.5s linear infinite;
+}
+@keyframes animate {
+	0%
+	{
+		transform: rotateX(-30deg) rotateY(0deg);
+	}
+	100%
+	{
+		transform: rotateX(-30deg) rotateY(360deg);
+	}
+
+}
+.cube2 div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.cube2 div span{
+	font-family: 'Lobster', cursive;
+	padding-top:45%;
+	color: white;
+	font-size: 23pt;
+	letter-spacing: 3px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#1a1b20,#fb0202);
+	transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+.cube2 .top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	background: #222;
+	transform: rotateX(90deg) translateZ(150px);
+}
+.cube2 .top::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	background: #f10015;
+	transform:  translateZ(-380px);
+	filter: blur(20px);
+	box-shadow: 0 0 120px rgba(255, 0, 0, 0.2),
+	0 0 200px rgba(255, 0, 0, 0.4),
+	0 0 300px rgba(255, 0, 0, 0.6),
+	0 0 400px rgba(255, 0, 0, 0.8),
+	0 0 500px rgba(255, 0, 0, 1);
+
+}
+/**=======
+ cubo azul
+ =========**/
+.cube3{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	transform: rotateX(-30deg);
+	animation: animate 6s linear infinite;
+}
+@keyframes animate {
+	0%
+	{
+		transform: rotateX(-30deg) rotateY(0deg);
+	}
+	100%
+	{
+		transform: rotateX(-30deg) rotateY(360deg);
+	}
+
+}
+.cube3 div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.cube3 div span img{
+	width: 100%;
+	height: 100%;
+}
+.cube3 div span{
+	font-size: 25pt;
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#1a1b20,#03acf2);
+	transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+}
+.cube3 .top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: #222;
+	transform: rotateX(90deg) translateZ(100px);
+}
+.cube3 .top::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: #03acf2;
+	transform:  translateZ(-380px);
+	filter: blur(20px);
+	box-shadow: 0 0 120px rgba(6,173,242,0.2),
+	0 0 200px rgba(6,173,242,0.4),
+	0 0 300px rgba(6,173,242,0.6),
+	0 0 400px rgba(6,173,242,0.8),
+	0 0 500px rgba(6,173,242,1);
+}
+
+/*===========
+Estilos mobiles
+============*/
+@media(max-width:767px){
+	.cubes-containers{
+		padding-top: 50px;
+		height: 450px;
+	}
+	/*cubo verde*/
+	.cube{
+		width: 70px;
+		height: 70px;
+	}
+	.cube div span{
+		transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+
+	}
+	.cube .top{
+		width: 70px;
+		height: 70px;
+		transform: rotateX(90deg) translateZ(35px);
+	}
+	.cube .top::before{
+		width: 70px;
+		height: 70px;
+		filter: blur(10px);
+		box-shadow: 0 0 70px rgba(0, 255, 0, 0.2),
+		0 0 200px rgba(0, 255, 0, 0.4),
+		0 0 300px rgba(0, 255, 0, 0.6),
+		0 0 400px rgba(0, 255, 0, 0.8),
+		0 0 500px rgba(0, 255, 0, 1);
+
+	}
+	/*cubo rojo*/
+	.cube2{
+		width: 70px;
+		height: 70px;
+	}
+	.cube2 div span{
+		transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+		font-size: 12pt;
+		letter-spacing: 0.5px;
+
+	}
+	.cube2 .top{
+		width: 70px;
+		height: 70px;
+		transform: rotateX(90deg) translateZ(35px);
+	}
+	.cube2 .top::before{
+		width: 70px;
+		height: 70px;
+		filter: blur(10px);
+		box-shadow: 0 0 70px rgba(255, 0, 0, 0.2),
+		0 0 200px rgba(255, 0, 0, 0.4),
+		0 0 300px rgba(255, 0, 0, 0.6),
+		0 0 400px rgba(255, 0, 0, 0.8),
+		0 0 500px rgba(255, 0, 0, 1);
+
+	}
+	/*Cubo azul*/
+	.cube3{
+		width: 70px;
+		height: 70px;
+	}
+	.cube3 div span{
+		transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+
+	}
+	.cube3 .top{
+		width: 70px;
+		height: 70px;
+		transform: rotateX(90deg) translateZ(35px);
+	}
+	.cube3 .top::before{
+		width: 70px;
+		height: 70px;
+		filter: blur(10px);
+		box-shadow: 0 0 70px rgba(6,173,242,0.2),
+		0 0 200px rgba(6,173,242,0.4),
+		0 0 300px rgba(6,173,242,0.6),
+		0 0 400px rgba(6,173,242,0.8),
+		0 0 500px rgba(6,173,242,1);
+
+	}
+}
+
+/*===========
+Estilos Tablest
+============*/
+@media(min-width:768px) and (max-width:992px){
+	/*cubo verde*/
+	.cube{
+		width: 100px;
+		height: 100px;
+	}
+	.cube div span{
+		transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+
+	}
+	.cube .top{
+		width: 100px;
+		height: 100px;
+		transform: rotateX(90deg) translateZ(50px);
+	}
+	.cube .top::before{
+		width: 100px;
+		height: 100px;
+		filter: blur(15px);
+		box-shadow: 0 0 80px rgba(0, 255, 0, 0.2),
+		0 0 200px rgba(0, 255, 0, 0.4),
+		0 0 300px rgba(0, 255, 0, 0.6),
+		0 0 400px rgba(0, 255, 0, 0.8),
+		0 0 500px rgba(0, 255, 0, 1);
+
+	}
+	/*cubo rojo*/
+	.cube2{
+		width: 100px;
+		height: 100px;
+	}
+	.cube2 div span{
+		transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+		font-size: 12pt;
+		letter-spacing: 0.5px;
+
+	}
+	.cube2 .top{
+		width: 100px;
+		height: 100px;
+		transform: rotateX(90deg) translateZ(50px);
+	}
+	.cube2 .top::before{
+		width: 100px;
+		height: 100px;
+		filter: blur(15px);
+		box-shadow: 0 0 80px rgba(255, 0, 0, 0.2),
+		0 0 200px rgba(255, 0, 0, 0.4),
+		0 0 300px rgba(255, 0, 0, 0.6),
+		0 0 400px rgba(255, 0, 0, 0.8),
+		0 0 500px rgba(255, 0, 0, 1);
+
+	}
+	/*Cubo azul*/
+	.cube3{
+		width: 100px;
+		height: 100px;
+	}
+	.cube3 div span{
+		transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+
+	}
+	.cube3 .top{
+		width: 100px;
+		height: 100px;
+		transform: rotateX(90deg) translateZ(50px);
+	}
+	.cube3 .top::before{
+		width: 100px;
+		height: 100px;
+		filter: blur(15px);
+		box-shadow: 0 0 80px rgba(6,173,242,0.2),
+		0 0 200px rgba(6,173,242,0.4),
+		0 0 300px rgba(6,173,242,0.6),
+		0 0 400px rgba(6,173,242,0.8),
+		0 0 500px rgba(6,173,242,1);
+
+	}
+}
+
+
+
+
+
+
